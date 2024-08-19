@@ -1,15 +1,3 @@
-variable "prefix" {
-  default = "tfvmex"
-}
-
-variable "location" {
-  default = "West Europe"
-}
-
-provider "azurerm" {
-  features {}
-}
-
 module "resource_group" {
     source = "./modules/resource_group"
 
